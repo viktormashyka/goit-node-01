@@ -13,14 +13,15 @@ program
   .option("-i, --id <type>", "user id")
   .option("-n, --name <type>", "user name")
   .option("-e, --email <type>", "user email")
-  .option("-p, --phone <type>", "user phone");
+  .option("-p, --phone <type>", "user phone")
+  .option("-l, --limit <limit>");
 
 program.parse(process.argv);
 
 const argv = program.opts();
 
 // TODO: рефакторить
-async function invokeAction({ action, id, name, email, phone }) {
+async function invokeAction({ action, id, name, email, phone, limit }) {
   switch (action) {
     case "list":
       console.log("invoke list");

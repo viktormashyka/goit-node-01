@@ -5,7 +5,6 @@ const { nanoid } = require("nanoid");
 // Розкоментуйте і запиши значення
 // const contactsPath = path.resolve(__dirname, "contacts.json");
 const contactsPath = path.resolve("./db/contacts.json");
-// console.log("contactsPath: ", contactsPath);
 
 // TODO: задокументувати кожну функцію
 
