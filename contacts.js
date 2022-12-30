@@ -11,7 +11,7 @@ const contactsPath = path.resolve("./db/contacts.json");
 async function readContacts() {
   const contactsRaw = await fs.readFile(contactsPath, { encoding: "utf8" });
   const contacts = JSON.parse(contactsRaw);
-  console.log("contacts: ", contacts);
+  //   console.log("contacts: ", contacts);
   return contacts;
 }
 
