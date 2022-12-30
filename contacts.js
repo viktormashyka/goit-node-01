@@ -26,7 +26,7 @@ async function listContacts({ limit }) {
 
 async function getContactById(id) {
   const contacts = await readContacts();
-  const contactById = contacts.filter((contact) => contact.id === id);
+  const contactById = contacts.find((contact) => contact.id === id);
   return contactById;
 }
 
